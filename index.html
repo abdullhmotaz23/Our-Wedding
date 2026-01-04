@@ -98,18 +98,29 @@
         }
 
         #map-section button {
-            background-color: #7a5a4f; 
+            background: linear-gradient(135deg, #7a5a4f, #9b7566);
             color: #fff;
             border: none;
-            padding: 15px 30px;
-            border-radius: 30px;
+            padding: 16px 36px;
+            border-radius: 40px;
             font-size: 1.2em;
+            font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
         }
 
         #map-section button:hover {
-            background-color: #5b4435;
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+            background: linear-gradient(135deg, #8a665a, #b08978);
+        }
+        #map-section button:active {
+            transform: scale(0.97);
+            box-shadow: 0 5px 12px rgba(0,0,0,0.3);
         }
 
        #countdown {
@@ -238,8 +249,8 @@
     </section>
 
     <section id="map-section">
-         <button onclick="window.open('https://maps.app.goo.gl/L9iYQpgFxPrhfaAu5?g_st=iw', '_blank')">
-            📍 افتح الموقع على الخرائط
+          <button onclick="window.open('https://maps.app.goo.gl/L9iYQpgFxPrhfaAu5?g_st=iw', '_blank')">
+            📍 اضغظ هنا لفتح الموقع على الخرائط
         </button>
 
     </section>
@@ -327,5 +338,6 @@
 </body>
 
 </html>
+
 
 

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdullh & Safeya's Wedding</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            border: 10px double #c8b08a;
+             margin: 15px;
+            font-family: 'Cairo', sans-serif;
+            background-image: url('Cover.JPEG'); 
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+       
+
+        #cover {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #000000;
+        }
+        .basmala {
+            width: 300px;
+            max-width: 80%;
+            
+        }
+        .aya {
+            width: 700px;
+            max-width: 90%;
+            
+        }
+
+       .couple-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .couple-img {
+            max-height: 150px; 
+            width: auto;
+            border-radius: 10px; 
+            object-fit: contain;
+        }
+
+        .heart-img {
+            max-height: 100px; 
+            width: auto;
+        }
+
+
+        #cover h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        
+
+        #details {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .detail-card {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-left: 5px solid #a3a057; 
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: right;
+            font-size: 1.1em;
+        }
+
+        #map-section button {
+            background-color: #7a5a4f; 
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #map-section button:hover {
+            background-color: #5b4435;
+        }
+
+       #countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+         .countdown-title {
+            text-align: center;
+            font-size: 1.8em;
+            color: #7a5a4f; 
+            margin-bottom: 25px;
+            font-weight: bold;
+        }
+
+
+        .countdown-card {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border: 2px solid #cfa5a0; 
+            border-radius: 15px;
+            padding: 20px 25px;
+            min-width: 80px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #7a5a4f; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .countdown-label {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+            font-weight: normal;
+        }
+
+       #guidelines {
+            max-width: 600px;
+            margin: auto;
+            text-align: center;
+        }
+
+        #guidelines h3 {
+            font-size: 1.6em;
+            margin-bottom: 30px;
+            color: #7a5a4f; 
+            font-weight: 700;
+        }
+
+        .guideline-card {
+            background-color: rgba(255, 255, 255, 0.75);
+            border-right: 4px solid #c8b08a; 
+            padding: 15px 20px;
+            margin-bottom: 15px;
+            border-radius: 12px;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .closing-dua {
+            margin-top: 40px;
+            font-size: 1.1em;
+            color: #7a5a4f;
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+    
+    #cover h1.couple-names {
+        font-size: 2.5em;
+        line-height: 1.1;
+    }
+
+    
+    #cover h2 {
+        font-size: 1.3em; 
+        line-height: 1.2;
+    }
+
+    .couple-images {
+        flex-direction: column; 
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .couple-img, .heart-img {
+        max-height: 120px; 
+        width: auto;
+    }
+
+    #countdown .countdown-card {
+        padding: 15px 20px;
+        min-width: 60px;
+        font-size: 1.2em;
+    }
+
+    .countdown-title {
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <section id="cover">
+        <img src="basmala.png" alt="بسم الله الرحمن الرحيم" class="basmala">
+         <img src="aya.png" alt="آية" class="aya">
+       <div class="couple-images">
+        <img src="abdullah.png" alt="عبدالله" class="couple-img">
+        <img src="heart.png" alt="قلب" class="heart-img">
+        <img src="safia.png" alt="صفية" class="couple-img">
+    </div>
+
+
+    </section>
+
+    <section id="details">
+        <div class="detail-card"> التاريخ: الأربعاء – 4 فبراير 2026</div>
+        <div class="detail-card"> الوقت: من الساعة 7 مساءًا حتى الساعة 11 مساءًا</div>
+        <div class="detail-card"> المكان: نادي الغابة – مصر الجديدة</div>
+    </section>
+
+    <section id="map-section">
+         <button onclick="window.open('https://maps.app.goo.gl/L9iYQpgFxPrhfaAu5?g_st=iw', '_blank')">
+            📍 افتح الموقع على الخرائط
+        </button>
+
+    </section>
+
+    <section id="countdown-section">
+        <h2 class="countdown-title">متبقي على الفرح</h2>
+
+        <div id="countdown">
+            <div class="countdown-card">
+                <span id="days">٠</span>
+                <div class="countdown-label">أيام</div>
+            </div>
+            <div class="countdown-card">
+                <span id="hours">٠</span>
+                <div class="countdown-label">ساعات</div>
+            </div>
+            <div class="countdown-card">
+                <span id="minutes">٠</span>
+                <div class="countdown-label">دقائق</div>
+            </div>
+            <div class="countdown-card">
+                <span id="seconds">٠</span>
+                <div class="countdown-label">ثواني</div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="guidelines">
+    <h3>تنويهات هامة</h3>
+        <div class="guideline-card">
+        السادة الرجال في القاعة العلوية <strong>بيلا روز</strong><br>
+        والسيدات في القاعة الأرضية <strong>رويال بالاس</strong>
+    </div>
+    <div class="guideline-card">
+         ممنوع التصوير داخل قاعة السيدات حفاظًا على خصوصية الجميع
+    </div>
+    <div class="guideline-card">
+            دخول الأولاد في قاعة السيدات يقتصر على سن ٣ سنوات فأقل
+    </div>
+    <div class="guideline-card">
+            نرجو الالتزام بمراعاة عورة النساء للنساء
+    </div>
+
+        <p class="closing-dua">
+       نَسْأل الله أن يجْمعَنا بِكُم على خَيْرٍ،  
+        وأن يُبَارِك لنا ولَكُم، وَيَجعَل هذا اللِّقاء عامِرًا بِالمَوَدَّة والسَّكِينة
+    </p>
+    </section>
+
+
+    <script>
+        const weddingDate = new Date(2026, 1, 4, 19, 0, 0).getTime();
+
+        function toArabicNumbers(number) {
+            const arabicNumbers = ['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+            return number.toString().split('').map(d => arabicNumbers[d] || d).join('');
+        }
+
+        const countdown = setInterval(() => {
+            const now = new Date().getTime();
+            const diff = weddingDate - now;
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = toArabicNumbers(days);
+            document.getElementById("hours").innerText = toArabicNumbers(hours);
+            document.getElementById("minutes").innerText = toArabicNumbers(minutes);
+            document.getElementById("seconds").innerText = toArabicNumbers(seconds);
+
+            if (diff <= 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML =
+                    " تم بحمد اللّه";
+            }
+        }, 1000);
+    </script>
+
+
+
+</body>
+</html>
